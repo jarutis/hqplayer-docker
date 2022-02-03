@@ -36,6 +36,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 # run
 ENV LD_LIBRARY_PATH="/opt/rocm-4.5.0/hip/lib/:${LD_LIBRARY_PATH}"
-RUN hqplayerd -s user pass
+RUN hqplayerd -s hqplayer hqplayer
 ENV HOME="/var/lib/hqplayer/home"
 ENTRYPOINT ["/usr/bin/hqplayerd"]
